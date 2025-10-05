@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mars Rezidans Tadilatları</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <button id="langBtn" class="lang-btn" aria-label="Change Language"><span id="langText">EN</span></button>
+        <div class="header">
+            <div class="header-title">
+                <svg class="recycle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M7 19H6.5a2.5 2.5 0 0 1 0-5H8M16 19h.5a2.5 2.5 0 0 0 0-5H15M12 13V7M15 10l-3-3-3 3"></path>
+                    <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path>
+                </svg>
+                <h1 data-translate="mainTitle">Rezidans Tadilatları</h1>
+            </div>
+            <p class="header-description" data-translate="mainDescription">Mürettebatınız Mars'a indi ve yaşam alanınızı şişirdi. Artık habitat çerçevesi ve ambalaj malzemeleri yeniden kullanıma hazır. Bu kaynakları Mars kolonizasyonu için nasıl kullanabilirsiniz?</p>
+        </div>
+        
+        <div>
+            <div class="section-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                </svg>
+                <h2 data-translate="materialsTitle">Mevcut Malzemeler</h2>
+            </div>
+            <div class="materials-grid" id="materialsGrid"></div>
+        </div>
+        
+        <div class="category-filter" id="categoryFilter"></div>
+        
+        <div class="ideas-section">
+            <div class="section-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M7 19H6.5a2.5 2.5 0 0 1 0-5H8M16 19h.5a2.5 2.5 0 0 0 0-5H15M12 13V7M15 10l-3-3-3 3"></path>
+                    <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path>
+                </svg>
+                <h2><span data-translate="ideasTitle">Yeniden Kullanım Fikirleri</span> <span id="ideaCount">(15)</span></h2>
+            </div>
+            <div id="ideasContainer"></div>
+            <div id="noResults" class="no-results">Bu kategoride henüz fikir bulunmamaktadır.</div>
+        </div>
+        
+        <div class="footer"><p>Made By astroC0D3</p></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
